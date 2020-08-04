@@ -37,8 +37,9 @@ class PositionLinearAttention(Module):
         tailor_sum = 1 / (width * height + torch.einsum("bnc, bc->bn", Q, torch.sum(K, dim=-1) + self.eps))
         value_sum = torch.einsum("bcn->bc", V).unsqueeze(-1)
         value_sum = value_sum.expand(-1, chnnels, width * height)
-        matrix = torch.einsum('bcn, bnm->bcm', V, Q)
-        matrix_sum = value_sum + torch.einsum("bcm, bmn->bcn", matrix, K)
+
+        matrix = torch.einsum('bmn, bcn->bmc', K, V)
+        matrix_sum = value_sum + torch.einsum("bnm, bmc->bcn", Q, matrix)
 
         weight_value = torch.einsum("bcn, bn->bcn", matrix_sum, tailor_sum)
         weight_value = weight_value.view(batch_size, chnnels, height, width)
