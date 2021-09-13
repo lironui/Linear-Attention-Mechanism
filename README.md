@@ -1,6 +1,6 @@
 # Linear-Attention-Mechanism
 
-⭐ Welcome to my [HomePage](https://lironui.github.io/) ⭐ 
+⭐ [Welcome to my HomePage](https://lironui.github.io/) ⭐ 
 
 This repository implementatesLinear-Attention-Mechanism based on PyTorch.
 
