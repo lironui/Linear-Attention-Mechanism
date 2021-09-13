@@ -4,7 +4,7 @@
 
 This repository implementatesLinear-Attention-Mechanism based on PyTorch.
 
-The detailed formula can be seen in the [Linear Attention Mechanism: An Efficient Attention for Semantic Segmentation](https://arxiv.org/ftp/arxiv/papers/2007/2007.14902.pdf).
+The detailed formula can be seen in the [Linear Attention Mechanism: An Efficient Attention for Semantic Segmentation](https://arxiv.org/ftp/arxiv/papers/2007/2007.14902.pdf) or [Multi-stage Attention ResU-Net for Semantic Segmentation of Fine-Resolution Remote Sensing Images](https://ieeexplore.ieee.org/abstract/document/9378788/).
 
 If our code is helpful to you, please cite  
 1. `Li R, Jianlin Su, Duan C and Zheng S. Linear Attention Mechanism: An Efficient Attention for Semantic Segmentation[J]. arXiv preprint arXiv:2007.14902, 2020.`  
